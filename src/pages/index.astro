@@ -1,0 +1,349 @@
+
+---
+const articles = [
+  {
+    category: "Cash Flow",
+    title: "The Hidden Cost of Running an SME in Kenya",
+    description: "Discover how missed payments, scattered records, and unclear cash flow affect small businesses.",
+    icon: "💰",
+url: "/articles/hidden-cost-of-running-an-sme-in-kenya",
+  },
+  {
+    category: "Profit Management",
+    title: "How to Calculate Your Small Business Profit",
+    description: "A practical guide to understanding sales, expenses, and what your business actually earns.",
+    icon: "📊",
+url: "/articles/how-to-calculate-small-business-profit",
+  },
+  {
+    category: "Business Growth",
+    title: "Common Money Mistakes Small Business Owners Make",
+    description: "Learn how to avoid everyday financial mistakes and make more informed business decisions.",
+    icon: "📈",
+url: "/articles/common-money-mistakes-small-business-owners-make",
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Biashivo Business Insights shares practical business guides, financial tips, and resources for Kenyan and African SMEs."
+    />
+    <title>Biashivo Business Insights | Know Your Numbers. Grow Your Business.</title>
+    <style>
+      :root {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #24364b;
+        background: #f7fafc;
+      }
+
+      * { box-sizing: border-box; }
+
+      body { margin: 0; }
+
+      a { text-decoration: none; }
+
+      .container {
+        width: min(1120px, 92%);
+        margin: auto;
+      }
+
+      header {
+        background: #0c2033;
+        border-bottom: 1px solid #284156;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 24px 0;
+      }
+
+      .brand {
+        color: white;
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: 1px;
+      }
+
+      .brand span { color: #00c9a7; }
+
+      nav {
+        display: flex;
+        gap: 26px;
+        flex-wrap: wrap;
+      }
+
+      nav a { color: #e0eaf0; font-size: 14px; }
+
+      nav a:hover { color: #5fe0c0; }
+
+      .hero {
+        background: linear-gradient(135deg, #0c2033, #173e51);
+        color: white;
+        padding: 100px 0;
+      }
+
+      .eyebrow {
+        color: #5fe0c0;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 760px;
+        font-size: clamp(38px, 5vw, 64px);
+        line-height: 1.12;
+        margin: 20px 0;
+      }
+
+      .hero p {
+        max-width: 650px;
+        font-size: 18px;
+        line-height: 1.8;
+        color: #d3e1e9;
+      }
+
+      .button {
+        display: inline-block;
+        margin-top: 24px;
+        background: #00a989;
+        color: white;
+        padding: 15px 26px;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+
+      .button:hover { background: #008e74; }
+
+      section { padding: 76px 0; }
+
+      .section-title {
+        color: #0c2033;
+        font-size: 34px;
+        margin: 0 0 12px;
+      }
+
+      .section-intro {
+        max-width: 650px;
+        line-height: 1.7;
+        margin-bottom: 34px;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .card {
+        background: white;
+        border: 1px solid #e2e9ef;
+        border-radius: 14px;
+        padding: 28px;
+        box-shadow: 0 8px 24px rgba(12, 32, 51, 0.04);
+      }
+
+      .card-icon { font-size: 32px; }
+
+      .category {
+        color: #008e74;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 20px;
+      }
+
+      .card h3 {
+        color: #0c2033;
+        font-size: 21px;
+        line-height: 1.4;
+      }
+
+      .card p { line-height: 1.7; }
+
+.article-link {
+  color: #0c2033;
+  text-decoration: none;
+}
+
+.article-link:hover {
+  color: #008e74;
+  text-decoration: underline;
+}
+
+.article-link:focus-visible {
+  outline: 2px solid #00a989;
+  outline-offset: 4px;
+}
+
+
+      .about { background: #eaf4f3; }
+
+      .about p {
+        max-width: 780px;
+        line-height: 1.9;
+        font-size: 17px;
+      }
+
+      .coming-soon {
+        background: #0c2033;
+        color: white;
+        text-align: center;
+      }
+
+      .coming-soon h2 {
+        font-size: 36px;
+        margin-bottom: 18px;
+      }
+
+      .coming-soon p {
+        max-width: 680px;
+        margin: auto;
+        line-height: 1.8;
+        color: #d3e1e9;
+      }
+
+      .status {
+        display: inline-block;
+        margin-top: 28px;
+        padding: 10px 18px;
+        border: 1px solid #00a989;
+        border-radius: 30px;
+        color: #5fe0c0;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      footer {
+        background: #071726;
+        color: #cbd5df;
+        padding: 32px 0;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      footer strong { color: white; }
+
+      @media (max-width: 800px) {
+        .cards { grid-template-columns: 1fr; }
+        .nav { flex-direction: column; align-items: flex-start; }
+        .hero { padding: 70px 0; }
+        section { padding: 54px 0; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container nav">
+        <a href="/" class="brand">BIASHI<span>VO</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#articles">Articles</a>
+          <a href="#about">About</a>
+          <a href="#early-access">Early Access</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="container">
+          <div class="eyebrow">Biashivo Business Insights</div>
+          <h1>Know your numbers.<br />Grow your business.</h1>
+          <p>
+            Practical business insights, financial guides, and useful resources
+            to help Kenyan and African entrepreneurs make smarter decisions
+            and build stronger businesses.
+          </p>
+          <a class="button" href="#articles">Explore Business Insights →</a>
+        </div>
+      </div>
+
+      <section id="articles">
+        <div class="container">
+          <h2 class="section-title">Featured Business Insights</h2>
+          <p class="section-intro">
+            Simple, practical advice to help you manage money,
+            understand your profits, and grow with confidence.
+          </p>
+
+          <div class="cards">
+            {articles.map((article) => (
+              <article class="card">
+                <div class="card-icon" aria-hidden="true">{article.icon}</div>
+                
+<div class="category">{article.category}</div>
+<h3>
+  {article.url ? (
+    <a href={article.url} class="article-link">
+      {article.title} →
+    </a>
+  ) : (
+    article.title
+  )}
+</h3>
+<p>{article.description}</p>
+
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="section-title">Why Biashivo Business Insights?</h2>
+          <p>
+            Running a small business requires more than making sales.
+            Understanding expenses, tracking customer payments, and knowing
+            your real profit are equally important.
+          </p>
+          <p>
+            Biashivo Business Insights makes business knowledge easier to
+            understand and apply, especially for entrepreneurs who manage
+            their businesses using notebooks, spreadsheets, or WhatsApp.
+          </p>
+        </div>
+      </section>
+
+      <section class="coming-soon" id="early-access">
+        <div class="container">
+          <h2>Something Better Is Coming.</h2>
+          <p>
+            We're building Biashivo, a simple business management platform
+            designed to help African SMEs manage sales, expenses, customers,
+            orders, and profits in one place.
+          </p>
+          <div class="status">Early Access — Coming Soon</div>
+        </div>
+      </section>
+    </main>
+
+    
+<footer>
+  <div class="container">
+    <p>
+      <strong>BIASHIVO</strong> — Know your numbers. Grow your business.
+    </p>
+    <p>
+      <a href="/privacy-policy" style="color: #5fe0c0;">
+        Privacy Policy
+      </a>
+    </p>
+    <p>© {new Date().getFullYear()} Biashivo. All rights reserved.</p>
+  </div>
+</footer>
+
+  </body>
+</html>

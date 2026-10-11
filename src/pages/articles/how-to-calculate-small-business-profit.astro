@@ -1,0 +1,303 @@
+
+---
+const title = "How to Calculate Your Small Business Profit in Kenya";
+const description = "Learn how to calculate gross profit and net profit with simple Kenyan shilling examples, and understand why sales are not the same as profit.";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title} | Biashivo Business Insights</title>
+    <style>
+      :root {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #24364b;
+        background: #f7fafc;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; }
+      a { color: #008e74; }
+      .container { width: min(1120px, 92%); margin: auto; }
+      header { background: #0c2033; padding: 24px 0; }
+      .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .brand {
+        color: white;
+        text-decoration: none;
+        font-size: 23px;
+        font-weight: 800;
+        letter-spacing: 1px;
+      }
+      .brand span { color: #00c9a7; }
+      .back-link {
+        color: #d3e1e9;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .article {
+        width: min(800px, 90%);
+        margin: 65px auto 85px;
+        background: white;
+        padding: clamp(24px, 5vw, 65px);
+        border: 1px solid #e2e9ef;
+        border-radius: 16px;
+      }
+      .category {
+        color: #008e74;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+      }
+      h1 {
+        color: #0c2033;
+        font-size: clamp(32px, 5vw, 48px);
+        line-height: 1.18;
+        margin: 18px 0 24px;
+      }
+      .intro {
+        color: #43566a;
+        font-size: 19px;
+        line-height: 1.85;
+        margin-bottom: 38px;
+      }
+      h2 {
+        color: #0c2033;
+        font-size: 27px;
+        margin: 42px 0 15px;
+        line-height: 1.35;
+      }
+      p, li { font-size: 17px; line-height: 1.9; }
+      ul { padding-left: 24px; }
+      li { margin-bottom: 10px; }
+      .formula {
+        background: #eaf4f3;
+        border-left: 4px solid #00a989;
+        padding: 20px 24px;
+        border-radius: 0 8px 8px 0;
+        margin: 28px 0;
+      }
+      .formula p { margin: 0; }
+      .table-wrap { overflow-x: auto; margin: 28px 0; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td {
+        border-bottom: 1px solid #e2e9ef;
+        padding: 14px;
+        text-align: left;
+      }
+      th { background: #eaf4f3; color: #0c2033; }
+      td:last-child, th:last-child { text-align: right; }
+      .total { font-weight: bold; color: #0c2033; }
+      .closing {
+        margin-top: 48px;
+        padding-top: 24px;
+        border-top: 1px solid #e2e9ef;
+      }
+      .button {
+        display: inline-block;
+        margin-top: 20px;
+        background: #00a989;
+        color: white;
+        padding: 14px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      footer {
+        background: #071726;
+        color: #cbd5df;
+        text-align: center;
+        padding: 32px 16px;
+        font-size: 14px;
+      }
+      @media (max-width: 600px) {
+        .article { margin: 25px auto 50px; }
+        h2 { font-size: 23px; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a class="brand" href="/">BIASHI<span>VO</span></a>
+        <a class="back-link" href="/#articles">← Back to Business Insights</a>
+      </div>
+    </header>
+
+    <main>
+      <article class="article">
+        <div class="category">Profit Management • Practical Guide</div>
+        <h1>How to Calculate Your Small Business Profit in Kenya</h1>
+
+        <p class="intro">
+          Your business may be making sales every day, but how much
+          money are you actually earning? Understanding profit helps
+          you set better prices, control expenses, and plan for growth.
+        </p>
+
+        <h2>1. Understand the Difference Between Sales and Profit</h2>
+        <p>
+          Sales revenue is the money your business earns from selling
+          products or services before deducting costs.
+        </p>
+        <p>
+          Profit is what remains after deducting the relevant
+          business costs and expenses.
+        </p>
+        <p>
+          For example, if your business sells goods worth KSh 100,000,
+          that doesn't mean you've made KSh 100,000 in profit.
+        </p>
+
+        <h2>2. Calculate Your Gross Profit</h2>
+        <p>
+          Gross profit is the amount remaining after subtracting
+          the direct cost of the goods or services sold.
+        </p>
+
+        <div class="formula">
+          <p>
+            <strong>Gross Profit = Sales Revenue − Cost of Goods Sold</strong>
+          </p>
+        </div>
+
+        <p>
+          Imagine you run a small shop in Nairobi. During one month,
+          you sell products worth KSh 100,000. The products you sold
+          originally cost you KSh 65,000 to purchase.
+        </p>
+
+        <div class="formula">
+          <p>
+            Sales revenue: KSh 100,000<br />
+            Cost of goods sold: KSh 65,000<br />
+            <strong>Gross profit: KSh 35,000</strong>
+          </p>
+        </div>
+
+        <h2>3. Calculate Your Net Profit</h2>
+        <p>
+          Gross profit is not the final amount your business earns.
+          You still need to deduct operating expenses such as rent,
+          electricity, transport, marketing, and other business costs.
+        </p>
+
+        <div class="formula">
+          <p>
+            <strong>Net Profit = Gross Profit − Operating Expenses</strong>
+          </p>
+        </div>
+
+        <h2>4. Practical Kenyan SME Profit Example</h2>
+        <p>
+          Let's continue with the small shop example and calculate
+          its estimated monthly profit.
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Business item</th>
+                <th>Amount (KSh)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Total sales</td><td>100,000</td></tr>
+              <tr><td>Cost of goods sold</td><td>65,000</td></tr>
+              <tr class="total"><td>Gross profit</td><td>35,000</td></tr>
+              <tr><td>Shop rent</td><td>10,000</td></tr>
+              <tr><td>Electricity</td><td>2,000</td></tr>
+              <tr><td>Transport</td><td>3,000</td></tr>
+              <tr><td>Marketing</td><td>2,000</td></tr>
+              <tr class="total"><td>Total operating expenses</td><td>17,000</td></tr>
+              <tr class="total"><td>Estimated net profit</td><td>18,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          In this example, the business made KSh 100,000 in sales,
+          but its estimated net profit was only KSh 18,000.
+          This is before any additional costs or taxes not included
+          in the example.
+        </p>
+
+        <h2>5. Calculate Your Profit Margin</h2>
+        <p>
+          Profit margin tells you what percentage of your sales
+          remains as profit.
+        </p>
+
+        <div class="formula">
+          <p>
+            <strong>Net Profit Margin = (Net Profit ÷ Sales) × 100</strong>
+            <br />
+            (18,000 ÷ 100,000) × 100 = <strong>18%</strong>
+          </p>
+        </div>
+
+        <p>
+          This means the business keeps approximately KSh 18
+          in net profit for every KSh 100 in sales, based on
+          the costs included in our example.
+        </p>
+
+        <h2>6. Common Mistakes When Calculating Profit</h2>
+        <ul>
+          <li>Counting all sales revenue as profit.</li>
+          <li>Forgetting small expenses such as delivery and packaging.</li>
+          <li>Mixing personal spending with business expenses.</li>
+          <li>Ignoring the cost of unsold inventory.</li>
+          <li>Confusing customer deposits with final earnings.</li>
+          <li>Failing to review profit regularly.</li>
+        </ul>
+
+        <h2>7. Simple Habits to Improve Your Profit Tracking</h2>
+        <ul>
+          <li>Record every sale and business expense.</li>
+          <li>Track the cost of products or services sold.</li>
+          <li>Review gross and net profit at least monthly.</li>
+          <li>Compare expenses across different months.</li>
+          <li>Use consistent records instead of relying on memory.</li>
+        </ul>
+
+        <h2>How Biashivo Plans to Help</h2>
+        <p>
+          Biashivo is being developed to help small business owners
+          record sales, expenses, customers, and orders, and
+          understand their business performance more easily.
+        </p>
+        <p>
+          Our goal is to make everyday business management
+          simpler for Kenyan entrepreneurs, without requiring
+          complicated accounting knowledge.
+        </p>
+
+        <div class="closing">
+          <h2>Know your numbers. Grow your business.</h2>
+          <p>
+            Understanding profit is one of the most important steps
+            toward building a sustainable business.
+          </p>
+          <a class="button" href="/#articles">
+            ← Explore More Business Insights
+          </a>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p>© {new Date().getFullYear()} Biashivo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
